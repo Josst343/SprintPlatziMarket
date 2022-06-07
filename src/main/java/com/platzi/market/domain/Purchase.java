@@ -21,6 +21,14 @@ public class Purchase {
         this.purchaseId = purchaseId;
     }
 
+    public String getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
+    }
+
     public LocalDateTime getDate() {
         return date;
     }
@@ -53,23 +61,11 @@ public class Purchase {
         this.state = state;
     }
 
-    public List<PurchaseItem> getItem() {
+    public List<PurchaseItem> getItems() {
         return items;
     }
 
     public void setItems(List<PurchaseItem> items) {
         this.items = items;
-    }
-
-    public String getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(String clientId) {
-        this.clientId = clientId;
-    }
-
-    public List<PurchaseItem> getItems() {
-        return items;
     }
 }
